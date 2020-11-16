@@ -1,1 +1,0 @@
-/home/lex/.vimrc
