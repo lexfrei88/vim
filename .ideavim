@@ -1,0 +1,14 @@
+inoremap jk <ESC>
+" set timeoutlen=1000
+
+let mapleader = " "
+map <Leader> <Plug>(easymotion-prefix)
+
+filetype plugin indent on
+syntax on
+set encoding=utf-8
+set clipboard=unnamedplus
+
+set easymotion
+set commentary
+set surround
