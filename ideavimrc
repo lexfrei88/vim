@@ -1,3 +1,4 @@
+" test
 inoremap jk <ESC>
 " set timeoutlen=1000
 
