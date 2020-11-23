@@ -1,7 +1,7 @@
 syntax on
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set smarttab
 set et
 set wrap
@@ -51,7 +51,7 @@ autocmd vimenter * ++nested colorscheme gruvbox
 set laststatus=2
 set noshowmode
 
-" Vimwiki config
+" Vimwiki config:
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'auto-toc': 1, 'auto_tags': 1, 'auto_diary_index': 1, 'auto_generate_tags': 1}]
 " let g:vimwiki_ext2syntax = {'.wiki': 'markdown'}
 let g:vimwiki_hl_headers = 1
@@ -59,6 +59,10 @@ let g:vimwiki_auto_header = 1
 let g:vimwiki_hl_cb_checked = 1
 let g:vimwiki_folding = 'list'
 map <C-b> :VimwikiBacklinks<CR>
+
+" Nerdtree config:
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 
 " Formatting:
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
