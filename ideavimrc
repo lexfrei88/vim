@@ -13,3 +13,4 @@ set clipboard=unnamedplus
 set easymotion
 set commentary
 set surround
+set clipboard+=ideaput

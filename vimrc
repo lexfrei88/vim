@@ -86,3 +86,10 @@ let mapleader=" "
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
+" sh fileype config:
+if &filetype == 'sh'
+  set textwidth=9999999
+endif
+
+" clear seach highlight on <esc> button:
+nnoremap <esc> :noh<return><esc>
