@@ -1,3 +1,7 @@
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+"map <Space> <Leader>
+
 syntax on
 
 set tabstop=2
@@ -52,12 +56,12 @@ set laststatus=2
 set noshowmode
 
 " Vimwiki config:
-let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'auto-toc': 1, 'auto_tags': 1, 'auto_diary_index': 1, 'auto_generate_tags': 1}]
-" let g:vimwiki_ext2syntax = {'.wiki': 'markdown'}
-let g:vimwiki_hl_headers = 1
-let g:vimwiki_auto_header = 1
-let g:vimwiki_hl_cb_checked = 1
-let g:vimwiki_folding = 'list'
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_ext2syntax = {'.wiki': 'markdown'}
+"let g:vimwiki_hl_headers = 1
+"let g:vimwiki_auto_header = 1
+"let g:vimwiki_hl_cb_checked = 1
+"let g:vimwiki_folding = 'list'
 map <C-b> :VimwikiBacklinks<CR>
 
 " Nerdtree config:
@@ -82,7 +86,6 @@ endif
 
 " Keys
 imap jk <Esc>
-let mapleader=" "
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
@@ -92,4 +95,4 @@ if &filetype == 'sh'
 endif
 
 " clear seach highlight on <esc> button:
-nnoremap <esc> :noh<return><esc>
+nnoremap <C-j> :noh<return><esc>
