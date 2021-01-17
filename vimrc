@@ -59,7 +59,7 @@ set noshowmode
 let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_ext2syntax = {'.wiki': 'markdown'}
 "let g:vimwiki_hl_headers = 1
-"let g:vimwiki_auto_header = 1
+let g:vimwiki_auto_header = 1
 "let g:vimwiki_hl_cb_checked = 1
 "let g:vimwiki_folding = 'list'
 map <C-b> :VimwikiBacklinks<CR>
