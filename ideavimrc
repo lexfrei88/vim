@@ -14,3 +14,4 @@ set easymotion
 set commentary
 set surround
 set clipboard+=ideaput
+set relativenumber number
